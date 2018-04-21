@@ -1,9 +1,6 @@
 /*---------------------------------------------------------
 	Local file stuff.
 ---------------------------------------------------------*/
--- Don't touch this because it'll fuck shit up.
-include( "sh_karmahud_config.lua" )
-
 -- This is going to disable the default HUD shit, don't want something disabled? Set it to "false"
 local HideOldHUDShit = {
 	[ "DarkRP_LocalPlayerHUD" ] = true, -- This is the default DarkRP HUD.
