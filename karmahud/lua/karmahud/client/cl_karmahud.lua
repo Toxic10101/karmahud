@@ -19,10 +19,10 @@ end)
 local H = 0
 local W = ScrW() / 2
 
--- Now I'm going to create some fonts for your HUD.
+-- Now I'm going to create some fonts for the HUD.
 surface.CreateFont( "KarmaHUD_Font1", { font = KarmaHUD.Config.MainFont, size = KarmaHUD.Config.Font1Size } )
 
--- Now I'll make your fucking laws toggle because you won't shut up about it.
+-- Laws Toggle.
 local ShouldLawsHUDDrawCunt = true
 local LawsHUDTimer = CurTime()
 	hook.Add( "Think", "LawsOfTheLandToggle", function()
