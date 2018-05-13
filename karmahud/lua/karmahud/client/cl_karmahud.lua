@@ -151,6 +151,12 @@ hook.Add( "HUDPaint", "KarmaHUD:DrawHisShiteHUD", function()
 	if IsValid(LocalPlayer():GetActiveWeapon()) then
 		local wep = LocalPlayer():GetActiveWeapon()
 		local wep_name = wep.PrintName or wep:GetPrintName() or wep:GetClass()
+    if wep_name == "#HL2_GravityGun" then
+      wep_name = "Gravity Gun"
+    end
+    if wep_name == "#GMOD_Physgun" then
+      wep_name = "Physics Gun"
+    end
 		draw.SimpleText(wep_name, "KarmaHUD_Font1", 70, ScrH() - 100, KarmaHUD.Config.HUDFontColor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	end
 		
